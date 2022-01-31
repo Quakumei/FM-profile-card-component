@@ -13,7 +13,7 @@
 
     /* custom */
     --gray-200: hsl(0, 0%, 91%);
-    --blue-900-shadow: hsla(207, 28%, 27%, 0.747);
+    --blue-900-shadow: hsla(207, 28%, 27%, 0.521);
     --white: white;
 
     /* Typography */
@@ -67,7 +67,7 @@ main {
     max-width: 324px;
     padding: var(--card-padding);
 
-    box-shadow: 0 1rem 1.5rem var(--blue-900-shadow);
+    box-shadow: 0 2rem 3rem var(--blue-900-shadow);
 
     color: var(--blue-900);
     font-size: var(--fs-base);
