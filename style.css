@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+:root { 
+    /* Colors */
+    --cyan-600: hsl(185, 75%, 39%);
+    --blue-900: hsl(229, 23%, 23%);
+    --blue-700: hsl(227, 10%, 46%);
+
+    --gray-600: hsl(0, 0%, 59%);
+
+    /* custom */
+    --gray-200: hsl(0, 0%, 91%);
+    --blue-900-shadow: hsla(207, 28%, 27%, 0.747);
+    --white: white;
+
+    /* Typography */
+    --family: 'Kumbh Sans', sans-serif;
+    --fs-base: 18px;
+    --weight-normal: 400;
+    --weight-bold: 700;
+
+    /* Borders */
+    --radii: 1rem;
+    --radii-full: 50%;
+    --card-padding: 2rem; 
+}
+
+.attribution { 
+    margin-bottom: 2rem;
+    color: var(--gray-200); 
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+
+    background-color: var(--cyan-600);
+    margin: 0;
+    font-family: var(--family);
+    font-size: var(--fs-base);
+
+    /* MULTIPLE BACGKROUNDS! */
+    background-image: url("images/bg-pattern-top.svg"), url("images/bg-pattern-bottom.svg");
+    /* Great background positioning! */
+    background-position: calc(50% - 30rem) calc(50% - 25rem), calc(50% + 30rem) calc(50% + 30rem);
+    background-repeat: no-repeat;
+}
+
+main {
+    height: 100%;
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    background-color: var(--white);
+    border-radius: var(--radii);
+    max-width: 324px;
+    padding: var(--card-padding);
+
+    box-shadow: 0 1rem 1.5rem var(--blue-900-shadow);
+
+    color: var(--blue-900);
+    font-size: var(--fs-base);
+    
+    
+
+}
+
+.profile-card__banner {
+    margin: calc(-1 * var(--card-padding)) calc(-1 * var(--card-padding))  0 calc(-1 * var(--card-padding));
+    border-radius: var(--radii) var(--radii) 0 0; 
+    width: calc(100% + 2 * var(--card-padding));
+}
+
+.profile-card__avatar {
+    margin: -48px 0 0 0;
+    width: 96px;
+    height: 96px;
+    border-radius: var(--radii-full);
+    border: 5px solid var(--white);
+    align-self: center;
+}
+
+.profile-card__age {
+    margin-left: 0.5rem;
+    color: var(--gray-600);
+    font-weight: var(--weight-normal);
+}
+
+.profile-card__name {
+    color: var(--blue-900);
+    font-weight: var(--weight-bold);
+}
+
+.profile-card__city {
+    margin-top: 0.5rem;
+    
+    color: var(--gray-600);
+    font-size: calc(var(--fs-base)*0.8);
+}
+
+.profile-card__title {
+    margin-top: 1rem;
+    display:flex;
+}
+
+
+.profile-card__hr {
+    /* AMAZING! */
+   margin: 1.5rem calc(-1 * var(--card-padding));
+   align-self: stretch;
+
+   border: 0;
+   border-top: 1px solid var(--gray-200);
+}
+
+.profile-card__stats {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat__number {
+    color: var(--blue-900);
+    font-weight: var(--weight-bold);
+    font-size: var(--fs-base);
+}
+
+.stat__name {
+    margin-top: 0.25rem;
+    font-weight: var(--weight-normal);
+    font-size: calc(var(--fs-base)*0.5);
+    color: var(--gray-600);
+    letter-spacing: 2px;
+}
+
+.content-area {
+    display:flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
